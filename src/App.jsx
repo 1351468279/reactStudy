@@ -42,9 +42,6 @@ class ErrorBoundary extends Component {
       // 也可以根据需要显示更详细的错误信息或自定义UI组件
       return <ErrorMessage error={this.state.error} />
     }
-    // 这里返回子组件，当没有错误发生时，ErrorBoundary组件会正常渲染其子组件
-    // this.props.children代表ErrorBoundary组件标签之间的所有内容
-    // 在这个应用中，当点击"Trigger caught error"按钮时，<Boom />组件会作为children传入
     return this.props.children;
   }
 }
