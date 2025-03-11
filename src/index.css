@@ -55,14 +55,31 @@ button:focus-visible {
 }
 
 @media (prefers-color-scheme: light) {
+  /* 
+   * 这段代码是一个媒体查询(Media Query)，用于检测用户系统偏好的颜色方案是否为"浅色模式"。
+   * 当用户的系统设置为浅色模式时，以下样式将会生效：
+   * 浏览器通过 prefers-color-scheme 媒体查询来检测用户系统的颜色方案偏好。
+   * 当此媒体查询匹配时，表示用户已在其操作系统或浏览器设置中选择了浅色模式。
+   * 这是一种响应式设计方法，允许网站根据用户的系统偏好自动调整其外观。
+   * 用户可以在操作系统设置（如Windows、macOS、iOS或Android的显示设置）中更改此偏好。
+   * 在大多数现代浏览器中，也可以通过开发者工具模拟不同的颜色方案偏好进行测试。
+   */
+  
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    color: #213547;        /* 设置根元素文本颜色为深灰色 */
+    background-color: #ffffff;  /* 设置根元素背景颜色为白色 */
   }
+  
   a:hover {
-    color: #747bff;
+    color: #747bff;        /* 当鼠标悬停在链接上时，链接颜色变为淡紫色 */
   }
+  
   button {
-    background-color: #f9f9f9;
+    background-color: #f9f9f9;  /* 设置按钮背景颜色为非常浅的灰色 */
   }
+  
+  /* 
+   * 这段代码的目的是实现网站的浅色主题，与默认的深色主题形成对比。
+   * 当用户系统偏好浅色模式时，网站会自动切换到这个更适合明亮环境的配色方案。
+   */
 }
